@@ -24,18 +24,20 @@ body {
 /* Add this to your MMW/style.css */
 
 /* Header Styles */
+/* Add this to your MMW/style.css */
+
+/* Header Styles */
 .header {
     background-color: #007BFF; /* Blue background for header */
     color: white; /* White text color */
     text-align: center; /* Center text */
-    padding: 20px; /* Padding for spacing */
+    padding: 15px; /* Adjust padding for mobile */
     position: relative; /* Positioning for any future adjustments */
 }
 
 .header-title {
     margin: 0; /* Remove default margin */
-    font-size: 2.5em; /* Font size for the title */
-    font-weight: bold; /* Bold font weight */
+    font-size: 2em; /* Adjust font size for mobile */
 }
 
 .logo-image {
@@ -94,6 +96,48 @@ body {
 /* Section Styles */
 section {
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+/* Add this to your MMW/style.css */
+
+/* General Section Styles */
+section {
+    padding: 20px; /* Padding for spacing */
+    background-color: #f9f9f9; /* Light background color for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    .about-cards-container {
+        flex-direction: column; /* Stack cards vertically on mobile */
+        align-items: center; /* Center cards */
+    }
+
+    .service-card {
+        width: 90%; /* Full width for service cards on mobile */
+        margin: 10px 0; /* Space between cards */
+    }
+
+    .gallery-container {
+        flex-direction: column; /* Stack images vertically on mobile */
+        align-items: center; /* Center images */
+    }
+
+    .home-images {
+        flex-direction: column; /* Stack images vertically on mobile */
+        align-items: center; /* Center images */
+    }
+
+    .home-image {
+        width: 100%; /* Full width for images on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
 
 /* Hover Effect for Sections */
